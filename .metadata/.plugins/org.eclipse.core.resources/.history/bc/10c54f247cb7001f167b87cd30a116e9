@@ -1,0 +1,91 @@
+package com.orangehrm.qa.extendreportlistener;
+
+import org.testng.ISuite;
+import org.testng.ITestResult;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.orangehrm.qa.base.SeleniumBase;
+
+public class ExtentReportListener extends SeleniumBase {// Create a Logger instance for logging
+
+	private ExtentReports extent;
+	private ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+
+	@Override
+	public void onStart(ISuite suite) {
+		log.info("Initializing Extent Report...");
+		String reportPath = System.getProperty("user.dir") + File.separator + "ExtentReports" + File.separator
+				+ "ExtentReport.html";
+
+		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
+		sparkReporter.config().setReportName("Automation Test Report");
+		sparkReporter.config().setDocumentTitle("Execution Summary");
+
+		extent = new ExtentReports();
+		extent.attachReporter(sparkReporter);
+
+		extent.setSystemInfo("Host Name", "Windows 10");
+		extent.setSystemInfo("Environment", "QA");
+		extent.setSystemInfo("Tester", "Yuvan_Moorthi");
+
+		log.info("Extent Report Initialized successfully.");
+	}
+
+	@Override
+	public void onFinish(ISuite suite) {
+		log.info("Finishing Suite execution and flushing the Extent Report...");
+		extent.flush(); // Write the results to the report
+	}
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		log.info("Test Started: " + result.getMethod().getMethodName());
+		ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName());
+		test.set(extentTest); // Set the current test for logging
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		log.info("Test Passed: " + result.getMethod().getMethodName());
+		test.get().pass("Test Passed");
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result) {
+		log.error("Test Failed: " + result.getMethod().getMethodName());
+
+		// Capture screenshot on failure
+		String testName = result.getName();
+
+		// Ensure that driver is properly initialized
+		if (driver != null) {
+			try {
+				// Capture the screenshot and add it to the report
+				String screenshotPath = TestUtil.captureScreenshot(driver, testName);
+				test.get().fail(result.getThrowable()).addScreenCaptureFromPath(screenshotPath);
+				log.info("Screenshot saved at: " + screenshotPath);
+			} catch (Exception e) {
+				log.error("Failed to capture screenshot due to Exception", e);
+				test.get().fail("Failed to capture screenshot due to Exception");
+			}
+		} else {
+			log.error("Driver is null, unable to capture screenshot.");
+			test.get().fail("Driver is null, unable to capture screenshot.");
+		}
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		log.warn("Test Skipped: " + result.getMethod().getMethodName());
+		test.get().skip(result.getThrowable());
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		log.warn("Test failed but within success percentage: " + result.getMethod().getMethodName());
+		test.get().warning("Test failed but within success percentage");
+	}
+
+}

@@ -1,0 +1,99 @@
+package com.orangehrm.qa.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.orangehrm.qa.base.SeleniumBase;
+
+public class AttendancePage extends SeleniumBase {
+	// ------------------------Page object initializing-------------------
+	public AttendancePage() {
+		PageFactory.initElements(driver, this);
+	}
+
+	// ------------------------------PageObject------------------------------
+	@FindBy(xpath = "//h6[normalize-space()='Punch In']")
+	WebElement punchInHeader;
+	@FindBy(xpath = "//label[normalize-space()='Date']")
+	WebElement dateLabel;
+	@FindBy(xpath = "//label[normalize-space()='Time']")
+	WebElement timeLabel;
+	@FindBy(xpath = "//label[normalize-space()='Note']")
+	WebElement noteLabel;
+	@FindBy(tagName = "textarea")
+	WebElement textArea;
+	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p orangehrm-form-hint']")
+	WebElement requiredLabel;
+	@FindBy(xpath = "//button[normalize-space()='In']")
+	WebElement clickOnIn;
+	// ------------------------------Calander------------------------------
+	@FindBy(xpath = "//div[@class='oxd-date-input']//i[@class='oxd-icon bi-calendar oxd-date-input-icon']")
+	WebElement calenderIcon;
+
+	@FindBy(xpath = "//div[contains(@class,'oxd-date-input-calendar')]")
+	private WebElement calenderMenu;
+
+	// ------------------------------Actions------------------------------
+	public boolean punchInHeader() {
+		log.info("checking visibility of the punch in header");
+		boolean result = punchInHeader.isDisplayed();
+		log.info("punchin header visibility: " + result);
+		return result;
+	}
+
+	public boolean dateLabel() {
+		log.info("checking visibility of date in attendance page");
+		boolean result = dateLabel.isDisplayed();
+		log.info("date label visibility: " + result);
+		return result;
+	}
+
+	public boolean timeLabel() {
+		log.info("checking visibility of time in attendance page");
+		boolean result = timeLabel.isDisplayed();
+		log.info("time label visibility: " + result);
+		return result;
+	}
+
+	public boolean noteLabel() {
+		log.info("checking visibility of note in attendance page");
+		boolean result = noteLabel.isDisplayed();
+		log.info("note label visibility: " + result);
+		return result;
+	}
+
+	public boolean textArea() {
+		log.info("checking visibility of text area in attendance page");
+		textArea.sendKeys("description");
+		boolean result = textArea.isDisplayed();
+		log.info("text area visibility: " + result);
+		return result;
+	}
+
+	public boolean requiredLabel() {
+		log.info("checking visibility of required label in attendance page");
+		boolean result = requiredLabel.isDisplayed();
+		log.info("required label visibility: " + result);
+		return result;
+	}
+
+	public boolean clickOnIn() {
+		log.info("checking visibility of click on IN in attendance page");
+		testutil.waitForElementToBeClickable(clickOnIn);
+		clickOnIn.click();
+		boolean result = clickOnIn.isEnabled();
+		log.info("click IN is enabled: " + result);
+		return result;
+	}
+
+	public boolean clickOnCalender() {
+		log.info("clicking on calender in attendance page");
+		testutil.waitForElementToBeClickable(calenderIcon);
+		calenderIcon.click();
+		testutil.waitForvisibilityOfElement(calenderMenu);
+		boolean result = calenderIcon.isEnabled();
+		log.info("clickable on calander:" + result);
+		return result;
+	}
+}

@@ -1,0 +1,88 @@
+package com.orangehrm.qa.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.orangehrm.qa.base.SeleniumBase;
+
+public class SupportPage extends SeleniumBase {
+	// ----------------PageObject Initializing-------------------------------
+	public SupportPage() {
+		PageFactory.initElements(driver, this);
+		log.info("SupportPage initialized");
+	}
+
+	// ------------------------------PageObject------------------------------
+	@FindBy(xpath = "//div[@class='orangehrm-card-container']/p[1]")
+	WebElement supportDescription;
+	@FindBy(xpath = "//div[@class='orangehrm-card-container']/p[2]")
+	WebElement supportInformation;
+	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p orangehrm-sub-title']")
+	WebElement supportCustomerSupport;
+	@FindBy(xpath = "//div[@class='oxd-grid-item oxd-grid-item--gutters']//p[@class='oxd-text oxd-text--p orangehrm-support-text']")
+	WebElement supportConnactSupport;
+	@FindBy(xpath = "//div[@class='oxd-grid-item oxd-grid-item--gutters']//p[@class='oxd-text oxd-text--p orangehrm-support-text']")
+	WebElement supportversion;
+	@FindBy(xpath = "//div[@class='oxd-layout-footer']//p[2]")
+	WebElement supportCopyrights;
+	@FindBy(linkText = "OrangeHRM, Inc")
+	WebElement supportMainWebsite;
+	@FindBy(xpath = "//img[@src='/public/_resources/themes/orangehrm/dist/images/OrangeHRM_Logo.svg']")
+	WebElement SupportMainWebsiteLogo;
+
+	// ------------------------------Actions---------------------------------
+	public boolean supportDescription() {
+		log.info("Checking visibility of the support description");
+		boolean result = supportDescription.isDisplayed();
+		log.info("Support description visibility: " + result);
+		return result;
+	}
+
+	public boolean supportInformation() {
+		log.info("Checking visibility of the support information");
+		boolean result = supportInformation.isDisplayed();
+		log.info("Support information visibility: " + result);
+		return result;
+	}
+
+	public boolean supportCustomerSupport() {
+		log.info("Checking visibility of the customer support label");
+		boolean result = supportCustomerSupport.isDisplayed();
+		log.info("Customer support label visibility: " + result);
+		return result;
+	}
+
+	public boolean supportConnactSupport() {
+		log.info("Checking visibility of the contact support text");
+		boolean result = supportConnactSupport.isDisplayed();
+		log.info("Contact support text visibility: " + result);
+		return result;
+	}
+
+	public boolean supportversion() {
+		log.info("Checking visibility of the version text");
+		boolean result = supportversion.isDisplayed();
+		log.info("Version text visibility: " + result);
+		return result;
+	}
+
+	public boolean supportCopyrights() {
+		log.info("Checking visibility of the copyright text");
+		boolean result = supportCopyrights.isDisplayed();
+		log.info("Copyright text visibility: " + result);
+		return result;
+	}
+
+	public void supportMainWebsite() {
+		log.info("Clicking on the 'OrangeHRM, Inc' link to navigate to the main website");
+		supportMainWebsite.click();
+	}
+
+	public boolean SupportMainWebsiteLogo() {
+		log.info("Checking visibility of the OrangeHRM main website logo");
+		boolean result = SupportMainWebsiteLogo.isDisplayed();
+		log.info("Main website logo visibility: " + result);
+		return result;
+	}
+}

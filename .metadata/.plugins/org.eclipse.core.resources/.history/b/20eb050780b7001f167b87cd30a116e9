@@ -1,0 +1,17 @@
+<suite name="OrangeHRM">
+<listeners>
+<listener class-name="com.orangehrm.qa.ExtentReporterListener.ExtentReportListener"/>
+</listeners>
+<test name="Smoke">
+<!--  Test classes to run  -->
+<classes>
+<class name="com.orangehrm.qa.testcases.LoginPageTest"/>
+<class name="com.orangehrm.qa.testcases.DashboardPageTest"/>
+<class name="com.orangehrm.qa.testcases.ForgotPasswordPageTest"/>
+<class name="com.orangehrm.qa.testcases.SupportPageTest"/>
+<class name="com.orangehrm.qa.testcases.AboutPageTest"/>
+<class name="com.orangehrm.qa.testcases.ChangePasswordPageTest"/>
+<class name="com.orangehrm.qa.testcases.AttendancePageTest"/>
+</classes>
+</test>
+</suite>

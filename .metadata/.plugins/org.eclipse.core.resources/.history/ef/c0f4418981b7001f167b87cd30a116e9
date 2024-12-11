@@ -1,0 +1,131 @@
+package com.orangehrm.qa.testcases;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.orangehrm.qa.base.SeleniumBase;
+import com.orangehrm.qa.pages.AttendancePage;
+import com.orangehrm.qa.pages.DashboardPage;
+import com.orangehrm.qa.pages.LoginPage;
+import com.orangehrm.qa.util.TestUtil;
+
+public class AttendancePageTest extends SeleniumBase {
+	LoginPage loginpage;
+	DashboardPage dashboardpage;
+	AttendancePage attendancepage;
+
+	public AttendancePageTest() {
+		super();
+	}
+
+	// --------------------To Initiate browser------------------------
+	@BeforeMethod
+	public void SetUp() {
+		log.info("Initializing the browser and launching the application");
+		initialization();
+		loginpage = new LoginPage();
+		dashboardpage = loginpage.enterLoginCredentials(prop.getProperty("username"), prop.getProperty("password"));
+		attendancepage = dashboardpage.stopWatch();
+		log.info("Objects for LoginPage, DashboardPage, and AttendancePage are initialized");
+	}
+
+	@Test(priority = 1)
+	public void punchInHeaderTest() {
+		log.info("Verifying the punchIn header is displayed");
+		boolean result = attendancepage.punchInHeader();
+		Assert.assertTrue(result, "Punch in header of attendance page is not displayed");
+		log.info("punchIn header visibility: " + result);
+	}
+
+	@Test
+	public void calandar() {
+		attendancepage.clickOnCalender();
+		String completeDay = "day-month-2000";
+		String[] dateArr = completeDay.split("-");
+		String date = dateArr[0];
+		String month = dateArr[1];
+		String year = dateArr[2];
+		// ------------------------------for year xpath------------------------------
+		TestUtil.waitForElementToBeClickable(null);
+		driver.findElement(By.xpath("//li[@class='--active oxd-calendar-selector-year']")).click();
+		List<WebElement> totalYear = driver.findElements(By.xpath("//ul[@role='menu']//li"));
+		for (int i = 0; i <= totalYear.size(); i++) {
+			String yearCount = driver.findElement(By.xpath("//ul[@role='menu']//li[normalize-space()='" + i + "']"))
+					.getText();
+			if (yearCount.equals(year)) {
+				driver.findElement(By.xpath("//ul[@role='menu']//li[normalize-space()='" + year + "']")).click();
+			}
+		}
+		// ------------------------------for month xpath------------------------------
+
+	}
+
+	@Test(priority = 2)
+	public void dateLabelTest() {
+		log.info("Verifying the date label is displayed");
+		boolean result = attendancepage.dateLabel();
+		Assert.assertTrue(result, "Date label of attendance page is not displayed");
+		log.info("Date label visibility: " + result);
+	}
+
+	@Test(priority = 3)
+	public void timeLabelTest() {
+		log.info("Verifying the time label is displayed");
+		boolean result = attendancepage.timeLabel();
+		Assert.assertTrue(result, "Time label of attendance page is not displayed");
+		log.info("Time label visibility: " + result);
+	}
+
+	@Test(priority = 4)
+	public void noteLabelTest() {
+		log.info("Verifying the note label is displayed");
+		boolean result = attendancepage.noteLabel();
+		Assert.assertTrue(result, "Note label of attendance page is not displayed");
+		log.info("Note label visibility: " + result);
+	}
+
+	@Test(priority = 5)
+	public void textAreaTest() {
+		log.info("Verifying the text area is displayed");
+		boolean result = attendancepage.textArea();
+		Assert.assertTrue(result, "Text area of attendance page is not displayed");
+		log.info("Text area visibility: " + result);
+	}
+
+	@Test(priority = 6)
+	public void requiredLabelTest() {
+		log.info("Verifying the required label is displayed");
+		boolean result = attendancepage.requiredLabel();
+		Assert.assertTrue(result, "Required label of attendance page is not displayed");
+		log.info("Required label visibility: " + result);
+	}
+
+	@Test(priority = 7)
+	public void clickOnInTest() {
+		log.info("Verifying click in functionality is enabled");
+		boolean result = attendancepage.clickOnIn();
+		Assert.assertTrue(result, "Click in of attendance page is not enabled");
+		log.info("Click in functionality enabled: " + result);
+	}
+
+	// ------------------------------To Quit Browser------------------------------
+	@AfterMethod
+	public void tearDown() {
+		log.info("Test execution complete. Closing the browser");
+		try {
+			if (driver != null) {
+				driver.quit();
+				log.info("Browser closed successfully");
+			}
+		} catch (Exception e) {
+			log.error("Error while closing the browser: " + e.getMessage());
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,5 @@
+package com.orangehrm.qa.base;
+
+public class SeleniumBase {
+
+}

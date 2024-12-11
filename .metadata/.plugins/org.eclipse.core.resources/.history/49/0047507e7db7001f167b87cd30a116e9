@@ -1,0 +1,153 @@
+package com.orangehrm.qa.pages;
+
+import com.orangehrm.qa.base.SeleniumBase;
+
+public class LoginPage extends SeleniumBase{
+	// ------------------------Page object initializing-------------------
+		public LoginPage() {
+			PageFactory.initElements(driver, this);
+			log.info("LoginPage initialized");
+		}
+
+		// ------------------------------comment------------------------------
+		@FindBy(name = "username")
+		WebElement enterUsername;
+		@FindBy(name = "password")
+		WebElement enterPassword;
+		@FindBy(xpath = "//button[.=' Login ']")
+		WebElement clickLogin;
+		@FindBy(xpath = "//div[@class='orangehrm-login-branding']")
+		WebElement brandLogo;
+		@FindBy(xpath = "//h5[normalize-space()=\"Login\"]")
+		WebElement logoHeader;
+		@FindBy(xpath = "//p[normalize-space()=\"Username : Admin\"]")
+		WebElement demoUser;
+		@FindBy(xpath = "//p[normalize-space()=\"Password : admin123\"]")
+		WebElement demoPassword;
+		@FindBy(xpath = "//i[@class=\"oxd-icon bi-person oxd-input-group__label-icon\"]")
+		WebElement iconUser;
+		@FindBy(xpath = "//i[@class=\"oxd-icon bi-key oxd-input-group__label-icon\"]")
+		WebElement iconPerson;
+		@FindBy(xpath = "//label[normalize-space()=\"Username\"]")
+		WebElement viewUsername;
+		@FindBy(xpath = "//label[normalize-space()=\"Password\"]")
+		WebElement viewPassword;
+		@FindBy(xpath = "//p[@class='oxd-text oxd-text--p orangehrm-login-forgot-header']")
+		WebElement forgotPasswordLink;
+		@FindBy(xpath = "//p[normalize-space()=\"OrangeHRM OS 5.7\"]")
+		WebElement viewVersion;
+		@FindBy(xpath = "//div[@class=\"orangehrm-login-footer\"]//p[2]")
+		WebElement viewCopyRights;
+		@FindBy(linkText = "OrangeHRM, Inc")
+		WebElement clickOrangehrmWebsite;
+		@FindBy(xpath = "//div[@class='orangehrm-login-footer-sm']")
+		WebElement viewSocialLinks;
+		@FindBy(xpath = "//img[@src='/public/_resources/themes/orangehrm/dist/images/OrangeHRM_Logo.svg']")
+		private WebElement mainOrangehrmImage;
+
+		// ------------------------Actions-------------------
+		public boolean validateBrandLogo() {
+			log.info("Checking visibility of the brand logo");
+			boolean result = brandLogo.isDisplayed();
+			log.info("Brand logo visibility: " + result);
+			return result;
+		}
+
+		public boolean validateLogoHeader() {
+			log.info("Checking visibility of the logo header");
+			boolean result = logoHeader.isDisplayed();
+			log.info("Logo header visibility: " + result);
+			return result;
+		}
+
+		public boolean validateDemoUser() {
+			log.info("Checking visibility of the demo user label");
+			boolean result = demoUser.isDisplayed();
+			log.info("Demo user label visibility: " + result);
+			return result;
+		}
+
+		public boolean validateDemoPassword() {
+			log.info("Checking visibility of the demo password label");
+			boolean result = demoPassword.isDisplayed();
+			log.info("Demo password label visibility: " + result);
+			return result;
+		}
+
+		public boolean validateIconUser() {
+			log.info("Checking visibility of the user icon");
+			boolean result = iconUser.isDisplayed();
+			log.info("User icon visibility: " + result);
+			return result;
+		}
+
+		public boolean validateIconPerson() {
+			log.info("Checking visibility of the person icon");
+			boolean result = iconPerson.isDisplayed();
+			log.info("Person icon visibility: " + result);
+			return result;
+		}
+
+		public boolean validateViewUsername() {
+			log.info("Checking visibility of the username label");
+			boolean result = viewUsername.isDisplayed();
+			log.info("Username label visibility: " + result);
+			return result;
+		}
+
+		public boolean validateViewPassword() {
+			log.info("Checking visibility of the password label");
+			boolean result = viewPassword.isDisplayed();
+			log.info("Password label visibility: " + result);
+			return result;
+		}
+
+		public ForgotPasswordPage clickOnForgotPasswordLink() {
+			log.info("Clicking on the Forgot Password link");
+			forgotPasswordLink.click();
+			return new ForgotPasswordPage();
+		}
+
+		public boolean validateViewVersion() {
+			log.info("Checking visibility of the version label");
+			boolean result = viewVersion.isDisplayed();
+			log.info("Version label visibility: " + result);
+			return result;
+		}
+
+		public boolean validateViewCopyRights() {
+			log.info("Checking visibility of the copyright text");
+			boolean result = viewCopyRights.isDisplayed();
+			log.info("Copyright text visibility: " + result);
+			return result;
+		}
+
+		public boolean validateViewSocialLinks() {
+			log.info("Checking visibility of the social links section");
+			boolean result = viewSocialLinks.isDisplayed();
+			log.info("Social links visibility: " + result);
+			return result;
+		}
+
+		public LoginPage clickOrangehrmWebsite() {
+			log.info("Clicking on the OrangeHRM website link");
+			clickOrangehrmWebsite.click();
+			return new LoginPage();
+		}
+
+		public boolean mainOrangehrmImage() {
+			log.info("Checking visibility of the main OrangeHRM image");
+			boolean result = mainOrangehrmImage.isDisplayed();
+			log.info("Main OrangeHRM image visibility: " + result);
+			return result;
+		}
+
+		public DashboardPage enterLoginCredentials(String Username, String Password) {
+			log.info("Entering username: " + Username + " and password: " + Password);
+			enterUsername.sendKeys(Username);
+			enterPassword.sendKeys(Password);
+			log.info("Clicking the login button");
+			clickLogin.click();
+			return new DashboardPage();
+		}
+}

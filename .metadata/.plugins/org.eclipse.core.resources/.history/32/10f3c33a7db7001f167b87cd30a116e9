@@ -1,0 +1,217 @@
+package com.orangehrm.qa.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class DashboardPage {
+	// ------------------------Page object initializing-------------------
+	public DashboardPage() {
+		PageFactory.initElements(driver, this);
+		log.info("DashboardPage initialized");
+	}
+
+	// ------------------------------PageObject------------------------------
+	// ------------------------------Header------------------------------
+	@FindBy(xpath = "//button[normalize-space()='Upgrade']")
+	WebElement upgradeLink;
+	@FindBy(xpath = "//img[@alt='OrangeHRM Logo']")
+	WebElement mainWebsiteLogo;
+	@FindBy(xpath = "//p[@class='oxd-userdropdown-name']")
+	WebElement labelUsername;
+	@FindBy(xpath = "//img[@class='oxd-userdropdown-img']")
+	WebElement labelUsernameImage;
+	@FindBy(xpath = "//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']")
+	WebElement labelUsernameDropdownIcon;
+	@FindBy(xpath = "//ul[@role='menu']")
+	WebElement headerDropdownMenu;
+	@FindBy(xpath = "//button[@title='Help']")
+	WebElement headerHelp;
+	@FindBy(id = "main-content")
+	WebElement headerHelpMain;
+	// ------------------------------Header DropDown------------------------------
+	@FindBy(linkText = "About")
+	WebElement headerDropdownAbout;
+	@FindBy(linkText = "Support")
+	WebElement headerDropdownSupport;
+	@FindBy(linkText = "Change Password")
+	WebElement headerDropdownChangePassword;
+	@FindBy(linkText = "Logout")
+	WebElement headerDropdownLogout;
+	// ------------------------------Dashboard Widget------------------------------
+	// ------------------------------Time at Work------------------------------
+	@FindBy(xpath = "//i[@class='oxd-icon bi-clock-fill orangehrm-dashboard-widget-icon']")
+	WebElement clockIcon;
+	@FindBy(xpath = "//p[normalize-space()='Time at Work']")
+	WebElement timeAtWork;
+	@FindBy(xpath = "//div[@class='orangehrm-attendance-card-profile-image']//img[@alt='profile picture']")
+	WebElement imageUserTimeAtWork;
+	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p orangehrm-attendance-card-state']")
+	WebElement punchedOut;
+	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p orangehrm-attendance-card-details']")
+	WebElement punchedOutTime;
+	@FindBy(xpath = "//span[@class='oxd-text oxd-text--span orangehrm-attendance-card-fulltime']")
+	WebElement timeToday;
+	@FindBy(xpath = "//div[@class='orangehrm-attendance-card-summary']")
+	WebElement thisWeek;
+	@FindBy(xpath = "//div[@class='emp-attendance-chart']//canvas")
+	WebElement employeeAttendanceChart;
+	@FindBy(xpath = "//i[@class='oxd-icon bi-stopwatch']")
+	WebElement stopWatch;
+
+	// ------------------------------Actions------------------------------
+	// ------------------------------Header------------------------------
+	public void upgradeLink() {
+		log.info("Clicking on the Upgrade link");
+		upgradeLink.click();
+	}
+
+	public boolean mainWebsiteLogo() {
+		log.info("Checking visibility of the main website logo");
+		boolean result = mainWebsiteLogo.isDisplayed();
+		log.info("Main website logo visibility: " + result);
+		return result;
+	}
+
+	public boolean labelUsername() {
+		log.info("Checking visibility of the username label");
+		boolean result = labelUsername.isDisplayed();
+		log.info("Username label visibility: " + result);
+		return result;
+	}
+
+	public boolean labelUsernameImage() {
+		log.info("Checking visibility of the username image");
+		boolean result = labelUsernameImage.isDisplayed();
+		log.info("Username image visibility: " + result);
+		return result;
+	}
+
+	public void labelUsernameDropdownIcon() {
+		log.info("Clicking on the username dropdown icon");
+		labelUsernameDropdownIcon.click();
+		boolean result = labelUsernameDropdownIcon.isDisplayed();
+		log.info("username dropdown icon is clickable: " + result);
+	}
+
+	public boolean headerDropdownMenu() {
+		log.info("Checking visibility of the dropdown menu");
+		boolean result = headerDropdownMenu.isDisplayed();
+		log.info("Dropdown menu visibility: " + result);
+		return result;
+	}
+
+	public void headerHelp() {
+		log.info("Clicking on the Help button");
+		headerHelp.click();
+		boolean result = headerHelp.isDisplayed();
+		log.info("header help is clickable: " + result);
+	}
+
+	public boolean headerHelpMain() {
+		log.info("Checking visibility of the Help main content");
+		boolean result = headerHelpMain.isDisplayed();
+		log.info("Help main content visibility: " + result);
+		return result;
+	}
+
+	// ------------------------------Header DropDown------------------------------
+	public AboutPage headerDropdownAbout() {
+		log.info("Navigating to the About page from the dropdown");
+		labelUsernameDropdownIcon.click();
+		testutil.waitForElementToBeClickable(headerDropdownAbout);
+		headerDropdownAbout.click();
+		return new AboutPage();
+	}
+
+	public SupportPage headerDropdownSupport() {
+		log.info("Navigating to the Support page from the dropdown");
+		labelUsernameImage.click();
+		testutil.waitForElementToBeClickable(headerDropdownSupport);
+		headerDropdownSupport.click();
+		return new SupportPage();
+	}
+
+	public ChangePasswordPage headerDropdownChangePassword() {
+		log.info("Navigating to the Change Password page from the dropdown");
+		labelUsername.click();
+		testutil.waitForElementToBeClickable(headerDropdownChangePassword);
+		headerDropdownChangePassword.click();
+		return new ChangePasswordPage();
+	}
+
+	public LoginPage headerDropdownLogout() {
+		log.info("Logging out from the Dashboard");
+		labelUsername.click();
+		testutil.waitForElementToBeClickable(headerDropdownLogout);
+		headerDropdownLogout.click();
+		return new LoginPage();
+	}
+
+	// ---------------------------Dashboard Widget-----------------------------
+	// ------------------------------Time at Work------------------------------
+	public boolean clockIcon() {
+		log.info("checking visibility of clock icon");
+		boolean result = clockIcon.isDisplayed();
+		log.info("clock icon visibility: " + result);
+		return result;
+	}
+
+	public boolean timeAtWork() {
+		log.info("checking visibility of time at work label");
+		boolean result = timeAtWork.isDisplayed();
+		log.info("time at work label visibility: " + result);
+		return result;
+	}
+
+	public boolean imageUserTimeAtWork() {
+		log.info("checking visibility of user image at time work");
+		boolean result = imageUserTimeAtWork.isDisplayed();
+		log.info("user image at time work visibility: " + result);
+		return result;
+	}
+
+	public boolean punchedOut() {
+		log.info("checking visibility of punched out");
+		boolean result = punchedOut.isDisplayed();
+		log.info("punched out visibility: " + result);
+		return result;
+	}
+
+	public boolean punchedOutTime() {
+		log.info("checking visibility of punched out time");
+		boolean result = punchedOutTime.isDisplayed();
+		log.info("punched out time visibility: " + result);
+		return result;
+	}
+
+	public boolean timeToday() {
+		log.info("checking visibility of time today");
+		boolean result = timeToday.isDisplayed();
+		log.info("time today visibility: " + result);
+		return result;
+	}
+
+	public boolean thisWeek() {
+		log.info("checking visibility of this week");
+		boolean result = thisWeek.isDisplayed();
+		log.info("this week visibility: " + result);
+		return result;
+	}
+
+	public boolean employeeAttendanceChart() {
+		log.info("checking visibility of employee attendance chart");
+		boolean result = employeeAttendanceChart.isDisplayed();
+		log.info("employee attendance chart visibility: " + result);
+		return result;
+	}
+
+	public AttendancePage stopWatch() {
+		log.info("checking the stop watch is enabled");
+		boolean result = stopWatch.isEnabled();
+		log.info("stop watch is enabled: " + result);
+		testutil.waitForElementToBeClickable(stopWatch);
+		stopWatch.click();
+		return new AttendancePage();
+	}
+}

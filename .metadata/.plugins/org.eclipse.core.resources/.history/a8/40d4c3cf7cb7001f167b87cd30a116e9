@@ -1,0 +1,93 @@
+package com.orangehrm.qa.pages;
+
+public class AboutPage {
+	// ------------------------Page object initializing-------------------
+		public AboutPage() {
+			PageFactory.initElements(driver, this);
+			log.info("AboutPage initialized");
+		}
+
+		// ------------------------------PageObject------------------------------
+		@FindBy(xpath = "//h6[normalize-space()='About']")
+		WebElement aboutHeader;
+		@FindBy(xpath = "//p[normalize-space()='Company Name:']")
+		WebElement aboutCompanyName;
+		@FindBy(xpath = "//p[normalize-space()='Version:']")
+		WebElement aboutVersion;
+		@FindBy(xpath = "//p[normalize-space()='Active Employees:']")
+		WebElement aboutActiveEmployees;
+		@FindBy(xpath = "//p[normalize-space()='Employees Terminated:']")
+		WebElement aboutEmployeesTerminated;
+		@FindBy(xpath = "//p[normalize-space()='OrangeHRM']")
+		WebElement aboutCompanyNameValue;
+		@FindBy(xpath = "//p[@class='oxd-text oxd-text--p orangehrm-about-text'][normalize-space()='OrangeHRM OS 5.7']")
+		WebElement aboutVersionValue;
+		@FindBy(xpath = "(//div[@class='oxd-grid-item oxd-grid-item--gutters'])[6]")
+		WebElement aboutActiveEmployeesValue;
+		@FindBy(xpath = "(//div[@class='oxd-grid-item oxd-grid-item--gutters'])[8]")
+		WebElement aboutEmployeesTerminatedValue;
+
+		// ------------------------------Actions------------------------------
+		public boolean aboutHeader() {
+			log.info("Checking visibility of About header");
+			boolean result = aboutHeader.isDisplayed();
+			log.info("About header visibility: " + result);
+			return result;
+		}
+
+		public boolean aboutCompanyName() {
+			log.info("Checking visibility of Company Name");
+			boolean result = aboutCompanyName.isDisplayed();
+			log.info("Company Name visibility: " + result);
+			return result;
+		}
+
+		public boolean aboutVersion() {
+			log.info("Checking visibility of Version");
+			boolean result = aboutVersion.isDisplayed();
+			log.info("Version visibility: " + result);
+			return result;
+		}
+
+		public boolean aboutActiveEmployees() {
+			log.info("Checking visibility of Active Employees");
+			boolean result = aboutActiveEmployees.isDisplayed();
+			log.info("Active Employees visibility: " + result);
+			return result;
+		}
+
+		public boolean aboutEmployeesTerminated() {
+			log.info("Checking visibility of Employees Terminated");
+			boolean result = aboutEmployeesTerminated.isDisplayed();
+			log.info("Employees Terminated visibility: " + result);
+			return result;
+		}
+
+		public boolean aboutCompanyNameValue() {
+			log.info("Checking visibility of Company Name value");
+			boolean result = aboutCompanyNameValue.isDisplayed();
+			log.info("Company Name value visibility: " + result);
+			return result;
+		}
+
+		public boolean aboutVersionValue() {
+			log.info("Checking visibility of Version value");
+			boolean result = aboutVersionValue.isDisplayed();
+			log.info("Version value visibility: " + result);
+			return result;
+		}
+
+		public boolean aboutActiveEmployeesValue() {
+			log.info("Checking visibility of Active Employees value");
+			boolean result = aboutActiveEmployeesValue.isDisplayed();
+			log.info("Active Employees value visibility: " + result);
+			return result;
+		}
+
+		public boolean aboutEmployeesTerminatedValue() {
+			log.info("Checking visibility of Employees Terminated value");
+			boolean result = aboutEmployeesTerminatedValue.isDisplayed();
+			log.info("Employees Terminated value visibility: " + result);
+			return result;
+		}
+}

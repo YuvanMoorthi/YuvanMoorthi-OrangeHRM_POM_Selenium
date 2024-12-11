@@ -1,0 +1,2671 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-OrangeHRM" class="navigator-link">
+              <span class="suite-name border-failed">OrangeHRM</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-OrangeHRM" class="navigator-link ">
+                    <span>D:\Yuvan\OrangeHRM_POM\OrangeHRM\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-OrangeHRM" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-OrangeHRM" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-OrangeHRM" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-OrangeHRM" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-OrangeHRM" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-OrangeHRM" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">79 methods, 5 failed,   74 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OrangeHRM" class="hide-methods failed suite-OrangeHRM"> (hide)</a> <!-- hide-methods failed suite-OrangeHRM -->
+                      <a href="#" panel-name="suite-OrangeHRM" class="show-methods failed suite-OrangeHRM"> (show)</a> <!-- show-methods failed suite-OrangeHRM -->
+                    </span>
+                    <div class="method-list-content failed suite-OrangeHRM">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AttendancePageTest" class="method navigator-link" hash-for-method="calandar">calandar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeCancelButtonTest">changeCancelButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ForgotPasswordPageTest" class="method navigator-link" hash-for-method="clickCancelButtonTest">clickCancelButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ForgotPasswordPageTest" class="method navigator-link" hash-for-method="clickResetButtonTest">clickResetButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="stopWatchTest">stopWatchTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OrangeHRM -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-OrangeHRM" class="hide-methods passed suite-OrangeHRM"> (hide)</a> <!-- hide-methods passed suite-OrangeHRM -->
+                      <a href="#" panel-name="suite-OrangeHRM" class="show-methods passed suite-OrangeHRM"> (show)</a> <!-- show-methods passed suite-OrangeHRM -->
+                    </span>
+                    <div class="method-list-content passed suite-OrangeHRM">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AboutPageTest" class="method navigator-link" hash-for-method="aboutActiveEmployeesTest">aboutActiveEmployeesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AboutPageTest" class="method navigator-link" hash-for-method="aboutActiveEmployeesValueTest">aboutActiveEmployeesValueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AboutPageTest" class="method navigator-link" hash-for-method="aboutCompanyNameTest">aboutCompanyNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AboutPageTest" class="method navigator-link" hash-for-method="aboutCompanyNameValueTest">aboutCompanyNameValueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AboutPageTest" class="method navigator-link" hash-for-method="aboutEmployeesTerminatedTest">aboutEmployeesTerminatedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AboutPageTest" class="method navigator-link" hash-for-method="aboutEmployeesTerminatedValueTest">aboutEmployeesTerminatedValueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AboutPageTest" class="method navigator-link" hash-for-method="aboutHeaderTest">aboutHeaderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AboutPageTest" class="method navigator-link" hash-for-method="aboutVersionTest">aboutVersionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AboutPageTest" class="method navigator-link" hash-for-method="aboutVersionValueTest">aboutVersionValueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeCompleteResetButtonTest">changeCompleteResetButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeConfirmPasswordTest">changeConfirmPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeConfirmPasswordValueTest">changeConfirmPasswordValueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeCurrentPasswordRequiredTest">changeCurrentPasswordRequiredTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeCurrentPasswordTest">changeCurrentPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeCurrentPasswordValueTest">changeCurrentPasswordValueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeHeaderUpdatePasswordTest">changeHeaderUpdatePasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeHeaderUsernameTest">changeHeaderUsernameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changePasswordTest">changePasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changePasswordValueTest">changePasswordValueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeRequiredTextTest">changeRequiredTextTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeResetButtonTest">changeResetButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeUserPasswordHintTest">changeUserPasswordHintTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ChangePasswordPageTest" class="method navigator-link" hash-for-method="changeUsernameAdminTest">changeUsernameAdminTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ForgotPasswordPageTest" class="method navigator-link" hash-for-method="clickMainPageLinkTest">clickMainPageLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="clickOnForgtPasswordLinkTest">clickOnForgtPasswordLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AttendancePageTest" class="method navigator-link" hash-for-method="clickOnInTest">clickOnInTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="clickOrangehrmWebsiteTest">clickOrangehrmWebsiteTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AttendancePageTest" class="method navigator-link" hash-for-method="dateLabelTest">dateLabelTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ForgotPasswordPageTest" class="method navigator-link" hash-for-method="descriptionTextTest">descriptionTextTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="employeeAttendanceChartTest">employeeAttendanceChartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ForgotPasswordPageTest" class="method navigator-link" hash-for-method="enterUsernameTest">enterUsernameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="headerDropdownAboutTest">headerDropdownAboutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="headerDropdownChangePasswordTest">headerDropdownChangePasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="headerDropdownLogout">headerDropdownLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="headerDropdownSupportTest">headerDropdownSupportTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ForgotPasswordPageTest" class="method navigator-link" hash-for-method="headerResetPasswordTest">headerResetPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="helpButtonTest">helpButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ForgotPasswordPageTest" class="method navigator-link" hash-for-method="iconPersonTest">iconPersonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="imageUserTimeAtWorkTest">imageUserTimeAtWorkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="labelUsernameDropdownIconTest">labelUsernameDropdownIconTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="labelUsernameImageTest">labelUsernameImageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ForgotPasswordPageTest" class="method navigator-link" hash-for-method="labelUsernameTest">labelUsernameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="labelUsernameTest">labelUsernameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.ForgotPasswordPageTest" class="method navigator-link" hash-for-method="labelVersionTest">labelVersionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AttendancePageTest" class="method navigator-link" hash-for-method="noteLabelTest">noteLabelTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AttendancePageTest" class="method navigator-link" hash-for-method="punchInHeaderTest">punchInHeaderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="punchedOutLabelTest">punchedOutLabelTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="punchedOutTimeTest">punchedOutTimeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AttendancePageTest" class="method navigator-link" hash-for-method="requiredLabelTest">requiredLabelTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.SupportPageTest" class="method navigator-link" hash-for-method="supportConnactSupportTest">supportConnactSupportTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.SupportPageTest" class="method navigator-link" hash-for-method="supportCopyrightsTest">supportCopyrightsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.SupportPageTest" class="method navigator-link" hash-for-method="supportDescriptionTest">supportDescriptionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.SupportPageTest" class="method navigator-link" hash-for-method="supportInformationTest">supportInformationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.SupportPageTest" class="method navigator-link" hash-for-method="supportMainWebsiteTest">supportMainWebsiteTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.SupportPageTest" class="method navigator-link" hash-for-method="supportversionTest">supportversionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AttendancePageTest" class="method navigator-link" hash-for-method="textAreaTest">textAreaTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="thisWeekTest">thisWeekTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="timeAtWorkLabelTest">timeAtWorkLabelTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="timeAtWorkclockIconTest">timeAtWorkclockIconTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.AttendancePageTest" class="method navigator-link" hash-for-method="timeLabelTest">timeLabelTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="timeTodayTest">timeTodayTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.DashboardPageTest" class="method navigator-link" hash-for-method="upgradeLinkTest">upgradeLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateBrandLogoTest">validateBrandLogoTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateDemoPasswordTest">validateDemoPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateDemoUserTest">validateDemoUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateIconPersonTest">validateIconPersonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateIconUserTest">validateIconUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateLogoHeaderTest">validateLogoHeaderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateViewCopyRightsTest">validateViewCopyRightsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateViewPasswordTest">validateViewPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateViewSocialLinksTest">validateViewSocialLinksTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateViewUsernameTest">validateViewUsernameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateViewVersionTest">validateViewVersionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM" title="com.orangehrm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginTest">verifyLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-OrangeHRM -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-OrangeHRM" class="panel OrangeHRM">
+          <div class="suite-OrangeHRM-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.qa.testcases.ForgotPasswordPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickCancelButtonTest">
+                  </a> <!-- clickCancelButtonTest -->
+                  <span class="method-name">clickCancelButtonTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h5[normalize-space()=&quot;Login&quot;]&quot;}
+  (Session info: chrome=131.0.6778.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35c8e2aee716391657cabe0a11e7652b, findElement {value=//h5[normalize-space()=&quot;Login&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.139, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\yuvan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51595/devtoo..., se:cdpVersion: 131.0.6778.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35c8e2aee716391657cabe0a11e7652b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at com.orangehrm.qa.pages.LoginPage.validateLogoHeader(LoginPage.java:62)
+	at com.orangehrm.qa.testcases.ForgotPasswordPageTest.clickCancelButtonTest(ForgotPasswordPageTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickResetButtonTest">
+                  </a> <!-- clickResetButtonTest -->
+                  <span class="method-name">clickResetButtonTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Reset Password&apos;]&quot;}
+  (Session info: chrome=131.0.6778.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fea354b8aabfc7489b86abbcc95aae8, findElement {value=//button[normalize-space()=&apos;Reset Password&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.139, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\yuvan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51622}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51622/devtoo..., se:cdpVersion: 131.0.6778.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fea354b8aabfc7489b86abbcc95aae8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at com.orangehrm.qa.pages.ForgotPasswordPage.clickResetButton(ForgotPasswordPage.java:85)
+	at com.orangehrm.qa.testcases.ForgotPasswordPageTest.clickResetButtonTest(ForgotPasswordPageTest.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM-class-failed -->
+          <div class="suite-OrangeHRM-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.qa.testcases.DashboardPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="stopWatchTest">
+                  </a> <!-- stopWatchTest -->
+                  <span class="method-name">stopWatchTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Punch In&apos;]&quot;}
+  (Session info: chrome=131.0.6778.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a222bfa3b1a8c851b921969db485461d, findElement {value=//h6[normalize-space()=&apos;Punch In&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.139, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\yuvan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51415/devtoo..., se:cdpVersion: 131.0.6778.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a222bfa3b1a8c851b921969db485461d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at com.orangehrm.qa.pages.AttendancePage.punchInHeader(AttendancePage.java:40)
+	at com.orangehrm.qa.testcases.DashboardPageTest.stopWatchTest(DashboardPageTest.java:213)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM-class-failed -->
+          <div class="suite-OrangeHRM-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.qa.testcases.ChangePasswordPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeCancelButtonTest">
+                  </a> <!-- changeCancelButtonTest -->
+                  <span class="method-name">changeCancelButtonTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Cancel&apos;]&quot;}
+  (Session info: chrome=131.0.6778.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1279114d7c879a4c2b65fea308fb8193, findElement {value=//button[normalize-space()=&apos;Cancel&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.139, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\yuvan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53026}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53026/devtoo..., se:cdpVersion: 131.0.6778.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1279114d7c879a4c2b65fea308fb8193
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isEnabled(Unknown Source)
+	at com.orangehrm.qa.pages.ChangePasswordPage.changeCancelButton(ChangePasswordPage.java:137)
+	at com.orangehrm.qa.testcases.ChangePasswordPageTest.changeCancelButtonTest(ChangePasswordPageTest.java:125)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM-class-failed -->
+          <div class="suite-OrangeHRM-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.qa.testcases.AttendancePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="calandar">
+                  </a> <!-- calandar -->
+                  <span class="method-name">calandar</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.orangehrm.qa.util.TestUtil.waitForvisibilityOfElement(org.openqa.selenium.WebElement)&quot; because &quot;this.testutil&quot; is null
+	at com.orangehrm.qa.pages.AttendancePage.clickOnCalender(AttendancePage.java:94)
+	at com.orangehrm.qa.testcases.AttendancePageTest.calandar(AttendancePageTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM-class-failed -->
+          <div class="suite-OrangeHRM-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.qa.testcases.ForgotPasswordPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickMainPageLinkTest">
+                  </a> <!-- clickMainPageLinkTest -->
+                  <span class="method-name">clickMainPageLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="descriptionTextTest">
+                  </a> <!-- descriptionTextTest -->
+                  <span class="method-name">descriptionTextTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterUsernameTest">
+                  </a> <!-- enterUsernameTest -->
+                  <span class="method-name">enterUsernameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="headerResetPasswordTest">
+                  </a> <!-- headerResetPasswordTest -->
+                  <span class="method-name">headerResetPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="iconPersonTest">
+                  </a> <!-- iconPersonTest -->
+                  <span class="method-name">iconPersonTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="labelUsernameTest">
+                  </a> <!-- labelUsernameTest -->
+                  <span class="method-name">labelUsernameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="labelVersionTest">
+                  </a> <!-- labelVersionTest -->
+                  <span class="method-name">labelVersionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM-class-passed -->
+          <div class="suite-OrangeHRM-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.qa.testcases.DashboardPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="employeeAttendanceChartTest">
+                  </a> <!-- employeeAttendanceChartTest -->
+                  <span class="method-name">employeeAttendanceChartTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="headerDropdownAboutTest">
+                  </a> <!-- headerDropdownAboutTest -->
+                  <span class="method-name">headerDropdownAboutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="headerDropdownChangePasswordTest">
+                  </a> <!-- headerDropdownChangePasswordTest -->
+                  <span class="method-name">headerDropdownChangePasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="headerDropdownLogout">
+                  </a> <!-- headerDropdownLogout -->
+                  <span class="method-name">headerDropdownLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="headerDropdownSupportTest">
+                  </a> <!-- headerDropdownSupportTest -->
+                  <span class="method-name">headerDropdownSupportTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="helpButtonTest">
+                  </a> <!-- helpButtonTest -->
+                  <span class="method-name">helpButtonTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="imageUserTimeAtWorkTest">
+                  </a> <!-- imageUserTimeAtWorkTest -->
+                  <span class="method-name">imageUserTimeAtWorkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="labelUsernameDropdownIconTest">
+                  </a> <!-- labelUsernameDropdownIconTest -->
+                  <span class="method-name">labelUsernameDropdownIconTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="labelUsernameImageTest">
+                  </a> <!-- labelUsernameImageTest -->
+                  <span class="method-name">labelUsernameImageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="labelUsernameTest">
+                  </a> <!-- labelUsernameTest -->
+                  <span class="method-name">labelUsernameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="punchedOutLabelTest">
+                  </a> <!-- punchedOutLabelTest -->
+                  <span class="method-name">punchedOutLabelTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="punchedOutTimeTest">
+                  </a> <!-- punchedOutTimeTest -->
+                  <span class="method-name">punchedOutTimeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="thisWeekTest">
+                  </a> <!-- thisWeekTest -->
+                  <span class="method-name">thisWeekTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeAtWorkLabelTest">
+                  </a> <!-- timeAtWorkLabelTest -->
+                  <span class="method-name">timeAtWorkLabelTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeAtWorkclockIconTest">
+                  </a> <!-- timeAtWorkclockIconTest -->
+                  <span class="method-name">timeAtWorkclockIconTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeTodayTest">
+                  </a> <!-- timeTodayTest -->
+                  <span class="method-name">timeTodayTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="upgradeLinkTest">
+                  </a> <!-- upgradeLinkTest -->
+                  <span class="method-name">upgradeLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM-class-passed -->
+          <div class="suite-OrangeHRM-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.qa.testcases.ChangePasswordPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeCompleteResetButtonTest">
+                  </a> <!-- changeCompleteResetButtonTest -->
+                  <span class="method-name">changeCompleteResetButtonTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeConfirmPasswordTest">
+                  </a> <!-- changeConfirmPasswordTest -->
+                  <span class="method-name">changeConfirmPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeConfirmPasswordValueTest">
+                  </a> <!-- changeConfirmPasswordValueTest -->
+                  <span class="method-name">changeConfirmPasswordValueTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeCurrentPasswordRequiredTest">
+                  </a> <!-- changeCurrentPasswordRequiredTest -->
+                  <span class="method-name">changeCurrentPasswordRequiredTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeCurrentPasswordTest">
+                  </a> <!-- changeCurrentPasswordTest -->
+                  <span class="method-name">changeCurrentPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeCurrentPasswordValueTest">
+                  </a> <!-- changeCurrentPasswordValueTest -->
+                  <span class="method-name">changeCurrentPasswordValueTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeHeaderUpdatePasswordTest">
+                  </a> <!-- changeHeaderUpdatePasswordTest -->
+                  <span class="method-name">changeHeaderUpdatePasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeHeaderUsernameTest">
+                  </a> <!-- changeHeaderUsernameTest -->
+                  <span class="method-name">changeHeaderUsernameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changePasswordTest">
+                  </a> <!-- changePasswordTest -->
+                  <span class="method-name">changePasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changePasswordValueTest">
+                  </a> <!-- changePasswordValueTest -->
+                  <span class="method-name">changePasswordValueTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeRequiredTextTest">
+                  </a> <!-- changeRequiredTextTest -->
+                  <span class="method-name">changeRequiredTextTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeResetButtonTest">
+                  </a> <!-- changeResetButtonTest -->
+                  <span class="method-name">changeResetButtonTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeUserPasswordHintTest">
+                  </a> <!-- changeUserPasswordHintTest -->
+                  <span class="method-name">changeUserPasswordHintTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeUsernameAdminTest">
+                  </a> <!-- changeUsernameAdminTest -->
+                  <span class="method-name">changeUsernameAdminTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM-class-passed -->
+          <div class="suite-OrangeHRM-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.qa.testcases.AboutPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutActiveEmployeesTest">
+                  </a> <!-- aboutActiveEmployeesTest -->
+                  <span class="method-name">aboutActiveEmployeesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutActiveEmployeesValueTest">
+                  </a> <!-- aboutActiveEmployeesValueTest -->
+                  <span class="method-name">aboutActiveEmployeesValueTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutCompanyNameTest">
+                  </a> <!-- aboutCompanyNameTest -->
+                  <span class="method-name">aboutCompanyNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutCompanyNameValueTest">
+                  </a> <!-- aboutCompanyNameValueTest -->
+                  <span class="method-name">aboutCompanyNameValueTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutEmployeesTerminatedTest">
+                  </a> <!-- aboutEmployeesTerminatedTest -->
+                  <span class="method-name">aboutEmployeesTerminatedTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutEmployeesTerminatedValueTest">
+                  </a> <!-- aboutEmployeesTerminatedValueTest -->
+                  <span class="method-name">aboutEmployeesTerminatedValueTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutHeaderTest">
+                  </a> <!-- aboutHeaderTest -->
+                  <span class="method-name">aboutHeaderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutVersionTest">
+                  </a> <!-- aboutVersionTest -->
+                  <span class="method-name">aboutVersionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutVersionValueTest">
+                  </a> <!-- aboutVersionValueTest -->
+                  <span class="method-name">aboutVersionValueTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM-class-passed -->
+          <div class="suite-OrangeHRM-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.qa.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnForgtPasswordLinkTest">
+                  </a> <!-- clickOnForgtPasswordLinkTest -->
+                  <span class="method-name">clickOnForgtPasswordLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOrangehrmWebsiteTest">
+                  </a> <!-- clickOrangehrmWebsiteTest -->
+                  <span class="method-name">clickOrangehrmWebsiteTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateBrandLogoTest">
+                  </a> <!-- validateBrandLogoTest -->
+                  <span class="method-name">validateBrandLogoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDemoPasswordTest">
+                  </a> <!-- validateDemoPasswordTest -->
+                  <span class="method-name">validateDemoPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDemoUserTest">
+                  </a> <!-- validateDemoUserTest -->
+                  <span class="method-name">validateDemoUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIconPersonTest">
+                  </a> <!-- validateIconPersonTest -->
+                  <span class="method-name">validateIconPersonTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIconUserTest">
+                  </a> <!-- validateIconUserTest -->
+                  <span class="method-name">validateIconUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLogoHeaderTest">
+                  </a> <!-- validateLogoHeaderTest -->
+                  <span class="method-name">validateLogoHeaderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateViewCopyRightsTest">
+                  </a> <!-- validateViewCopyRightsTest -->
+                  <span class="method-name">validateViewCopyRightsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateViewPasswordTest">
+                  </a> <!-- validateViewPasswordTest -->
+                  <span class="method-name">validateViewPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateViewSocialLinksTest">
+                  </a> <!-- validateViewSocialLinksTest -->
+                  <span class="method-name">validateViewSocialLinksTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateViewUsernameTest">
+                  </a> <!-- validateViewUsernameTest -->
+                  <span class="method-name">validateViewUsernameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateViewVersionTest">
+                  </a> <!-- validateViewVersionTest -->
+                  <span class="method-name">validateViewVersionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginTest">
+                  </a> <!-- verifyLoginTest -->
+                  <span class="method-name">verifyLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM-class-passed -->
+          <div class="suite-OrangeHRM-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.qa.testcases.AttendancePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnInTest">
+                  </a> <!-- clickOnInTest -->
+                  <span class="method-name">clickOnInTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dateLabelTest">
+                  </a> <!-- dateLabelTest -->
+                  <span class="method-name">dateLabelTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noteLabelTest">
+                  </a> <!-- noteLabelTest -->
+                  <span class="method-name">noteLabelTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="punchInHeaderTest">
+                  </a> <!-- punchInHeaderTest -->
+                  <span class="method-name">punchInHeaderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="requiredLabelTest">
+                  </a> <!-- requiredLabelTest -->
+                  <span class="method-name">requiredLabelTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="textAreaTest">
+                  </a> <!-- textAreaTest -->
+                  <span class="method-name">textAreaTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeLabelTest">
+                  </a> <!-- timeLabelTest -->
+                  <span class="method-name">timeLabelTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM-class-passed -->
+          <div class="suite-OrangeHRM-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.qa.testcases.SupportPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="supportConnactSupportTest">
+                  </a> <!-- supportConnactSupportTest -->
+                  <span class="method-name">supportConnactSupportTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="supportCopyrightsTest">
+                  </a> <!-- supportCopyrightsTest -->
+                  <span class="method-name">supportCopyrightsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="supportDescriptionTest">
+                  </a> <!-- supportDescriptionTest -->
+                  <span class="method-name">supportDescriptionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="supportInformationTest">
+                  </a> <!-- supportInformationTest -->
+                  <span class="method-name">supportInformationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="supportMainWebsiteTest">
+                  </a> <!-- supportMainWebsiteTest -->
+                  <span class="method-name">supportMainWebsiteTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="supportversionTest">
+                  </a> <!-- supportversionTest -->
+                  <span class="method-name">supportversionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM-class-passed -->
+        </div> <!-- panel OrangeHRM -->
+        <div panel-name="test-xml-OrangeHRM" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Yuvan\OrangeHRM_POM\OrangeHRM\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;OrangeHRM&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.orangehrm.qa.extentreportlistener.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Smoke&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.orangehrm.qa.testcases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.qa.testcases.DashboardPageTest&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.qa.testcases.ForgotPasswordPageTest&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.qa.testcases.SupportPageTest&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.qa.testcases.AboutPageTest&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.qa.testcases.ChangePasswordPageTest&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.qa.testcases.AttendancePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Smoke --&gt;
+&lt;/suite&gt; &lt;!-- OrangeHRM --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-OrangeHRM" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for OrangeHRM</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Smoke (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-OrangeHRM" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for OrangeHRM</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-OrangeHRM" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for OrangeHRM</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_OrangeHRM');
+function tableData_OrangeHRM() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(79);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'stopWatchTest')
+data.setCell(0, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(0, 3, 39550);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'clickMainPageLinkTest')
+data.setCell(1, 2, 'com.orangehrm.qa.testcases.ForgotPasswordPageTest')
+data.setCell(1, 3, 34113);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'changeCancelButtonTest')
+data.setCell(2, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(2, 3, 31944);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'clickCancelButtonTest')
+data.setCell(3, 2, 'com.orangehrm.qa.testcases.ForgotPasswordPageTest')
+data.setCell(3, 3, 31411);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clickResetButtonTest')
+data.setCell(4, 2, 'com.orangehrm.qa.testcases.ForgotPasswordPageTest')
+data.setCell(4, 3, 30109);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'clickOrangehrmWebsiteTest')
+data.setCell(5, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(5, 3, 20840);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'supportMainWebsiteTest')
+data.setCell(6, 2, 'com.orangehrm.qa.testcases.SupportPageTest')
+data.setCell(6, 3, 20425);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'textAreaTest')
+data.setCell(7, 2, 'com.orangehrm.qa.testcases.AttendancePageTest')
+data.setCell(7, 3, 15240);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'helpButtonTest')
+data.setCell(8, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(8, 3, 14737);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'headerDropdownAboutTest')
+data.setCell(9, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(9, 3, 14047);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'upgradeLinkTest')
+data.setCell(10, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(10, 3, 11284);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'headerDropdownLogout')
+data.setCell(11, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(11, 3, 9517);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'headerDropdownChangePasswordTest')
+data.setCell(12, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(12, 3, 7987);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'headerDropdownSupportTest')
+data.setCell(13, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(13, 3, 7116);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'clickOnInTest')
+data.setCell(14, 2, 'com.orangehrm.qa.testcases.AttendancePageTest')
+data.setCell(14, 3, 7047);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'changeCompleteResetButtonTest')
+data.setCell(15, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(15, 3, 6064);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'punchedOutTimeTest')
+data.setCell(16, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(16, 3, 5492);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'timeAtWorkLabelTest')
+data.setCell(17, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(17, 3, 5412);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyLoginTest')
+data.setCell(18, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(18, 3, 5218);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'enterUsernameTest')
+data.setCell(19, 2, 'com.orangehrm.qa.testcases.ForgotPasswordPageTest')
+data.setCell(19, 3, 4967);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'thisWeekTest')
+data.setCell(20, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(20, 3, 4549);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'punchedOutLabelTest')
+data.setCell(21, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(21, 3, 3691);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'labelUsernameDropdownIconTest')
+data.setCell(22, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(22, 3, 3164);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'aboutActiveEmployeesValueTest')
+data.setCell(23, 2, 'com.orangehrm.qa.testcases.AboutPageTest')
+data.setCell(23, 3, 3056);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'clickOnForgtPasswordLinkTest')
+data.setCell(24, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(24, 3, 3004);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'employeeAttendanceChartTest')
+data.setCell(25, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(25, 3, 2910);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'calandar')
+data.setCell(26, 2, 'com.orangehrm.qa.testcases.AttendancePageTest')
+data.setCell(26, 3, 2833);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'timeTodayTest')
+data.setCell(27, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(27, 3, 2647);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'validateIconPersonTest')
+data.setCell(28, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(28, 3, 2305);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'labelUsernameTest')
+data.setCell(29, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(29, 3, 2277);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'timeAtWorkclockIconTest')
+data.setCell(30, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(30, 3, 2207);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'changeCurrentPasswordRequiredTest')
+data.setCell(31, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(31, 3, 2156);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'imageUserTimeAtWorkTest')
+data.setCell(32, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(32, 3, 1987);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'validateViewVersionTest')
+data.setCell(33, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(33, 3, 1343);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'validateIconUserTest')
+data.setCell(34, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(34, 3, 1327);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'validateViewCopyRightsTest')
+data.setCell(35, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(35, 3, 1325);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'validateViewUsernameTest')
+data.setCell(36, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(36, 3, 1304);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'timeLabelTest')
+data.setCell(37, 2, 'com.orangehrm.qa.testcases.AttendancePageTest')
+data.setCell(37, 3, 1285);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'punchInHeaderTest')
+data.setCell(38, 2, 'com.orangehrm.qa.testcases.AttendancePageTest')
+data.setCell(38, 3, 1239);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'validateViewPasswordTest')
+data.setCell(39, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(39, 3, 1210);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'descriptionTextTest')
+data.setCell(40, 2, 'com.orangehrm.qa.testcases.ForgotPasswordPageTest')
+data.setCell(40, 3, 1205);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'validateLogoHeaderTest')
+data.setCell(41, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(41, 3, 1186);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'validateDemoUserTest')
+data.setCell(42, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(42, 3, 1164);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'headerResetPasswordTest')
+data.setCell(43, 2, 'com.orangehrm.qa.testcases.ForgotPasswordPageTest')
+data.setCell(43, 3, 1156);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'supportCopyrightsTest')
+data.setCell(44, 2, 'com.orangehrm.qa.testcases.SupportPageTest')
+data.setCell(44, 3, 1133);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'changeCurrentPasswordValueTest')
+data.setCell(45, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(45, 3, 1124);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'validateDemoPasswordTest')
+data.setCell(46, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(46, 3, 1121);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'validateViewSocialLinksTest')
+data.setCell(47, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(47, 3, 1101);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'changePasswordValueTest')
+data.setCell(48, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(48, 3, 1097);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'aboutVersionTest')
+data.setCell(49, 2, 'com.orangehrm.qa.testcases.AboutPageTest')
+data.setCell(49, 3, 1070);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'changeConfirmPasswordTest')
+data.setCell(50, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(50, 3, 1068);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'changeConfirmPasswordValueTest')
+data.setCell(51, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(51, 3, 1059);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'supportversionTest')
+data.setCell(52, 2, 'com.orangehrm.qa.testcases.SupportPageTest')
+data.setCell(52, 3, 1009);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'changeRequiredTextTest')
+data.setCell(53, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(53, 3, 1002);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'supportInformationTest')
+data.setCell(54, 2, 'com.orangehrm.qa.testcases.SupportPageTest')
+data.setCell(54, 3, 992);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'changeHeaderUsernameTest')
+data.setCell(55, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(55, 3, 960);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'changeUserPasswordHintTest')
+data.setCell(56, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(56, 3, 930);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'aboutEmployeesTerminatedValueTest')
+data.setCell(57, 2, 'com.orangehrm.qa.testcases.AboutPageTest')
+data.setCell(57, 3, 926);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'supportDescriptionTest')
+data.setCell(58, 2, 'com.orangehrm.qa.testcases.SupportPageTest')
+data.setCell(58, 3, 915);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'changeResetButtonTest')
+data.setCell(59, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(59, 3, 859);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'requiredLabelTest')
+data.setCell(60, 2, 'com.orangehrm.qa.testcases.AttendancePageTest')
+data.setCell(60, 3, 833);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'labelUsernameImageTest')
+data.setCell(61, 2, 'com.orangehrm.qa.testcases.DashboardPageTest')
+data.setCell(61, 3, 830);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'validateBrandLogoTest')
+data.setCell(62, 2, 'com.orangehrm.qa.testcases.LoginPageTest')
+data.setCell(62, 3, 826);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'changeCurrentPasswordTest')
+data.setCell(63, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(63, 3, 823);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'labelUsernameTest')
+data.setCell(64, 2, 'com.orangehrm.qa.testcases.ForgotPasswordPageTest')
+data.setCell(64, 3, 802);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'supportConnactSupportTest')
+data.setCell(65, 2, 'com.orangehrm.qa.testcases.SupportPageTest')
+data.setCell(65, 3, 790);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'dateLabelTest')
+data.setCell(66, 2, 'com.orangehrm.qa.testcases.AttendancePageTest')
+data.setCell(66, 3, 783);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'changePasswordTest')
+data.setCell(67, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(67, 3, 782);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'changeHeaderUpdatePasswordTest')
+data.setCell(68, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(68, 3, 774);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'aboutCompanyNameValueTest')
+data.setCell(69, 2, 'com.orangehrm.qa.testcases.AboutPageTest')
+data.setCell(69, 3, 732);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'aboutVersionValueTest')
+data.setCell(70, 2, 'com.orangehrm.qa.testcases.AboutPageTest')
+data.setCell(70, 3, 721);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'noteLabelTest')
+data.setCell(71, 2, 'com.orangehrm.qa.testcases.AttendancePageTest')
+data.setCell(71, 3, 664);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'changeUsernameAdminTest')
+data.setCell(72, 2, 'com.orangehrm.qa.testcases.ChangePasswordPageTest')
+data.setCell(72, 3, 662);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'labelVersionTest')
+data.setCell(73, 2, 'com.orangehrm.qa.testcases.ForgotPasswordPageTest')
+data.setCell(73, 3, 606);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'iconPersonTest')
+data.setCell(74, 2, 'com.orangehrm.qa.testcases.ForgotPasswordPageTest')
+data.setCell(74, 3, 599);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'aboutActiveEmployeesTest')
+data.setCell(75, 2, 'com.orangehrm.qa.testcases.AboutPageTest')
+data.setCell(75, 3, 504);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'aboutCompanyNameTest')
+data.setCell(76, 2, 'com.orangehrm.qa.testcases.AboutPageTest')
+data.setCell(76, 3, 460);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'aboutEmployeesTerminatedTest')
+data.setCell(77, 2, 'com.orangehrm.qa.testcases.AboutPageTest')
+data.setCell(77, 3, 350);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'aboutHeaderTest')
+data.setCell(78, 2, 'com.orangehrm.qa.testcases.AboutPageTest')
+data.setCell(78, 3, 210);
+window.suiteTableData['OrangeHRM']= { tableData: data, tableDiv: 'times-div-OrangeHRM'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-OrangeHRM">
+              </div> <!-- times-div-OrangeHRM -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-OrangeHRM" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for OrangeHRM</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-OrangeHRM" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-OrangeHRM" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateBrandLogoTest</span>
+                <span class="method-start">12162 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13034 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">14166 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLogoHeaderTest</span>
+                <span class="method-start">24510 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25718 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">26846 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDemoUserTest</span>
+                <span class="method-start">38613 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39784 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">41014 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDemoPasswordTest</span>
+                <span class="method-start">50302 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">51523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">53295 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIconUserTest</span>
+                <span class="method-start">64130 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">65477 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">67680 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIconPersonTest</span>
+                <span class="method-start">83680 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">85995 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">87924 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateViewUsernameTest</span>
+                <span class="method-start">98944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">100277 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">101340 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateViewPasswordTest</span>
+                <span class="method-start">111705 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">112925 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">114041 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateViewVersionTest</span>
+                <span class="method-start">123438 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">124874 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">126054 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateViewCopyRightsTest</span>
+                <span class="method-start">136314 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">137668 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">138852 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateViewSocialLinksTest</span>
+                <span class="method-start">148646 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">149793 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">153137 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnForgtPasswordLinkTest</span>
+                <span class="method-start">162954 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">165964 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">166716 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOrangehrmWebsiteTest</span>
+                <span class="method-start">176849 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">197701 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">201286 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginTest</span>
+                <span class="method-start">212718 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">217947 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.qa.testcases.DashboardPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">219177 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">upgradeLinkTest</span>
+                <span class="method-start">239214 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">250500 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">254526 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">labelUsernameTest</span>
+                <span class="method-start">272653 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">274942 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">276517 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">labelUsernameImageTest</span>
+                <span class="method-start">295823 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">296674 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">297918 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">labelUsernameDropdownIconTest</span>
+                <span class="method-start">312772 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">315952 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">318160 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">helpButtonTest</span>
+                <span class="method-start">343143 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">357887 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">360429 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">headerDropdownAboutTest</span>
+                <span class="method-start">387918 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">401967 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">405121 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">headerDropdownSupportTest</span>
+                <span class="method-start">422616 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">429737 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">430702 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">headerDropdownChangePasswordTest</span>
+                <span class="method-start">444372 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">452378 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">455574 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">headerDropdownLogout</span>
+                <span class="method-start">473339 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">482860 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">484833 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">timeAtWorkclockIconTest</span>
+                <span class="method-start">496770 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">498981 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">500475 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">timeAtWorkLabelTest</span>
+                <span class="method-start">524014 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">529434 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">531523 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imageUserTimeAtWorkTest</span>
+                <span class="method-start">545189 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">547178 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">548723 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">punchedOutLabelTest</span>
+                <span class="method-start">562295 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">566017 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">568096 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">punchedOutTimeTest</span>
+                <span class="method-start">585153 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">590649 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">594735 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">timeTodayTest</span>
+                <span class="method-start">608391 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">611040 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">614479 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">thisWeekTest</span>
+                <span class="method-start">628726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">633285 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">637249 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">employeeAttendanceChartTest</span>
+                <span class="method-start">650886 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">653832 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">655804 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">stopWatchTest</span>
+                <span class="method-start">675487 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">715494 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.qa.testcases.ForgotPasswordPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">716261 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">headerResetPasswordTest</span>
+                <span class="method-start">730196 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">731359 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">732629 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">descriptionTextTest</span>
+                <span class="method-start">749910 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">751128 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">752090 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">iconPersonTest</span>
+                <span class="method-start">766402 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">767010 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">767881 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">labelUsernameTest</span>
+                <span class="method-start">781726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">782544 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">785065 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">labelVersionTest</span>
+                <span class="method-start">798659 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">799272 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">800199 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickCancelButtonTest</span>
+                <span class="method-start">812794 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">844626 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">845380 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickResetButtonTest</span>
+                <span class="method-start">857493 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">888049 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">888826 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">enterUsernameTest</span>
+                <span class="method-start">905182 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">910164 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">910956 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickMainPageLinkTest</span>
+                <span class="method-start">926987 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">961107 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.qa.testcases.SupportPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">963550 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">supportDescriptionTest</span>
+                <span class="method-start">991760 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">992692 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">996117 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">supportInformationTest</span>
+                <span class="method-start">1029966 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1030966 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1033825 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">supportConnactSupportTest</span>
+                <span class="method-start">1061627 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1062426 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1063551 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">supportversionTest</span>
+                <span class="method-start">1098339 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1099358 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1101368 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">supportCopyrightsTest</span>
+                <span class="method-start">1131843 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1132980 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1134842 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">supportMainWebsiteTest</span>
+                <span class="method-start">1165720 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1186149 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.qa.testcases.AboutPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1187863 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutHeaderTest</span>
+                <span class="method-start">1221979 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1222193 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1223538 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutCompanyNameTest</span>
+                <span class="method-start">1257271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1257747 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1258529 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutVersionTest</span>
+                <span class="method-start">1285606 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1286679 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1290279 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutActiveEmployeesTest</span>
+                <span class="method-start">1320153 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1320660 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1322171 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutEmployeesTerminatedTest</span>
+                <span class="method-start">1346686 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1347040 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1347943 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutCompanyNameValueTest</span>
+                <span class="method-start">1369955 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1370694 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1372024 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutVersionValueTest</span>
+                <span class="method-start">1393792 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1394521 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1397544 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutActiveEmployeesValueTest</span>
+                <span class="method-start">1433585 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1436644 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1451630 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">aboutEmployeesTerminatedValueTest</span>
+                <span class="method-start">1471379 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1472313 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.qa.testcases.ChangePasswordPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1477664 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeHeaderUpdatePasswordTest</span>
+                <span class="method-start">1508660 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1509443 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1512853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeHeaderUsernameTest</span>
+                <span class="method-start">1535073 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1536039 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1536886 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeUsernameAdminTest</span>
+                <span class="method-start">1561353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1562030 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1562915 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeCurrentPasswordTest</span>
+                <span class="method-start">1587565 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1588390 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1589171 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeCurrentPasswordValueTest</span>
+                <span class="method-start">1618926 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1620077 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1621041 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changePasswordTest</span>
+                <span class="method-start">1647404 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1648189 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1649134 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changePasswordValueTest</span>
+                <span class="method-start">1674304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1675405 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1676290 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeConfirmPasswordTest</span>
+                <span class="method-start">1700547 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1702307 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1704699 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeConfirmPasswordValueTest</span>
+                <span class="method-start">1732249 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1733312 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1737103 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeUserPasswordHintTest</span>
+                <span class="method-start">1761844 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1762904 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1763754 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeRequiredTextTest</span>
+                <span class="method-start">1797541 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1798558 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1800997 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">changeCancelButtonTest</span>
+                <span class="method-start">1846606 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1879739 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1881821 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeResetButtonTest</span>
+                <span class="method-start">1908989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1909849 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1913745 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeCurrentPasswordRequiredTest</span>
+                <span class="method-start">1941935 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1944098 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1945061 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeCompleteResetButtonTest</span>
+                <span class="method-start">1982621 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1988688 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.qa.testcases.AttendancePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">1990187 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">calandar</span>
+                <span class="method-start">2019320 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2022644 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">2025029 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">punchInHeaderTest</span>
+                <span class="method-start">2050003 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2051248 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">2052951 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dateLabelTest</span>
+                <span class="method-start">2073716 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2074751 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">2076317 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">timeLabelTest</span>
+                <span class="method-start">2099922 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2101210 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">2102953 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">noteLabelTest</span>
+                <span class="method-start">2124728 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2125425 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">2126644 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">textAreaTest</span>
+                <span class="method-start">2162040 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2177323 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">2178626 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">requiredLabelTest</span>
+                <span class="method-start">2199525 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2200369 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">2201314 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnInTest</span>
+                <span class="method-start">2242139 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2249303 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

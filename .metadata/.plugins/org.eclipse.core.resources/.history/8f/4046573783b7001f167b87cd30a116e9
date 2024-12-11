@@ -1,0 +1,67 @@
+2024-12-11 11:14:01 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:14:01 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Initializing the browser and launching the application
+2024-12-11 11:14:08 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Chrome browser opened successfully.
+2024-12-11 11:14:08 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:14:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-11 11:14:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:14:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - LoginPage initialized
+2024-12-11 11:14:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:14:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - ForgotPasswordPage initialized
+2024-12-11 11:14:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:14:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - DashboardPage initialized
+2024-12-11 11:14:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Objects for LoginPage, ForgotPasswordPage, and DashboardPage are initialized
+2024-12-11 11:14:15 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Verifying the brand logo on the Login page
+2024-12-11 11:14:15 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Checking visibility of the brand logo
+2024-12-11 11:14:16 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Brand logo visibility: true
+2024-12-11 11:14:16 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Brand logo displayed: true
+2024-12-11 11:14:16 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Test execution complete. Closing the browser
+2024-12-11 11:14:17 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Browser closed successfully
+2024-12-11 11:14:59 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:14:59 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:00 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:00 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:00 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:00 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:00 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:00 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:00 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Initializing Extent Report...
+2024-12-11 11:15:01 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Extent Report Initialized successfully.
+2024-12-11 11:15:01 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Initializing the browser and launching the application
+2024-12-11 11:15:07 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Chrome browser opened successfully.
+2024-12-11 11:15:07 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-11 11:15:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - LoginPage initialized
+2024-12-11 11:15:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - ForgotPasswordPage initialized
+2024-12-11 11:15:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - DashboardPage initialized
+2024-12-11 11:15:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Objects for LoginPage, ForgotPasswordPage, and DashboardPage are initialized
+2024-12-11 11:15:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Test Started: validateBrandLogoTest
+2024-12-11 11:15:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Verifying the brand logo on the Login page
+2024-12-11 11:15:14 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Checking visibility of the brand logo
+2024-12-11 11:15:16 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Brand logo visibility: true
+2024-12-11 11:15:16 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Brand logo displayed: true
+2024-12-11 11:15:16 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Test Passed: validateBrandLogoTest
+2024-12-11 11:15:16 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Test execution complete. Closing the browser
+2024-12-11 11:15:17 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Browser closed successfully
+2024-12-11 11:15:17 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Initializing the browser and launching the application
+2024-12-11 11:15:20 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Chrome browser opened successfully.
+2024-12-11 11:15:20 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:28 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-12-11 11:15:28 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:28 [main] INFO  com.orangehrm.qa.base.SeleniumBase - LoginPage initialized
+2024-12-11 11:15:28 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:28 [main] INFO  com.orangehrm.qa.base.SeleniumBase - ForgotPasswordPage initialized
+2024-12-11 11:15:28 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Successfully accessed the config file at: D:\Yuvan\OrangeHRM_POM\OrangeHRM\src\main\java\com\orangehrm\qa\config\config.properties
+2024-12-11 11:15:28 [main] INFO  com.orangehrm.qa.base.SeleniumBase - DashboardPage initialized
+2024-12-11 11:15:28 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Objects for LoginPage, ForgotPasswordPage, and DashboardPage are initialized
+2024-12-11 11:15:28 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Test Started: validateLogoHeaderTest
+2024-12-11 11:15:28 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Verifying the logo header on the Login page
+2024-12-11 11:15:28 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Checking visibility of the logo header
+2024-12-11 11:15:29 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Logo header visibility: true
+2024-12-11 11:15:29 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Logo header displayed: true
+2024-12-11 11:15:29 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Test Passed: validateLogoHeaderTest
+2024-12-11 11:15:29 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Test execution complete. Closing the browser
+2024-12-11 11:15:31 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Browser closed successfully
+2024-12-11 11:15:31 [main] INFO  com.orangehrm.qa.base.SeleniumBase - Initializing the browser and launching the application

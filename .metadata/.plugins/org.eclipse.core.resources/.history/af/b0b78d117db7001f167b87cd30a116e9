@@ -1,0 +1,168 @@
+package com.orangehrm.qa.pages;
+
+public class ChangePasswordPage {
+	// --------------------PageObject Initializing------------------
+		public ChangePasswordPage() {
+			PageFactory.initElements(driver, this);
+			log.info("ChangePasswordPage initialized");
+		}
+
+		// ------------------------------PageObject------------------------------
+		@FindBy(xpath = "//h6[normalize-space()='Update Password']")
+		WebElement changeHeaderUpdatePassword;
+		@FindBy(xpath = "//label[normalize-space()='Username']")
+		WebElement changeHeaderUsername;
+		@FindBy(xpath = "//p[@class='oxd-text oxd-text--p orangehrm-user-name']")
+		WebElement changeUsernameAdmin;
+		@FindBy(xpath = "//label[normalize-space()='Current Password']")
+		WebElement changeCurrentPassword;
+		@FindBy(xpath = "(//input[@type='password'])[1]")
+		WebElement changeCurrentPassswordValue;
+		@FindBy(xpath = "//label[normalize-space()='Password']")
+		WebElement changePassword;
+		@FindBy(xpath = "(//input[@type='password'])[2]")
+		WebElement changePasswordValue;
+		@FindBy(xpath = "//label[normalize-space()='Confirm Password']")
+		WebElement changeConfirmPassword;
+		@FindBy(xpath = "(//input[@type='password'])[3]")
+		WebElement changeConfirmPasswordValue;
+		@FindBy(xpath = "//p[@class='oxd-text oxd-text--p user-password-hint']")
+		WebElement changeUserPasswordHint;
+		@FindBy(xpath = "//p[@class='oxd-text oxd-text--p orangehrm-form-hint']")
+		WebElement changeRequiredText;
+		@FindBy(xpath = "//button[normalize-space()='Cancel']")
+		WebElement changeCancelButton;
+		@FindBy(xpath = "//button[normalize-space()='Save']")
+		WebElement changeResetButton;
+
+		// ------------------------------Required------------------------------
+		@FindBy(xpath = "//div[@class='oxd-grid-item oxd-grid-item--gutters']//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message'][normalize-space()='Required']")
+		WebElement changeCurrentPasswordRequired;
+		@FindBy(xpath = "//div[@class='oxd-grid-item oxd-grid-item--gutters user-password-cell']//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message'][normalize-space()='Required']")
+		WebElement changePasswordRequired;
+		@FindBy(xpath = "//span[normalize-space()='Passwords do not match']")
+		WebElement changeConfirmPasswordRequired;
+
+		// ------------------------------Actions------------------------------
+		public boolean changeHeaderUpdatePassword() {
+			log.info("Checking visibility of ChangePassword Header");
+			boolean result = changeHeaderUpdatePassword.isDisplayed();
+			log.info("Change Password header visibility: " + result);
+			return result;
+		}
+
+		public boolean changeHeaderUsername() {
+			log.info("Checking visibility of Username header");
+			boolean result = changeHeaderUsername.isDisplayed();
+			log.info("Username header visibility: " + result);
+			return result;
+		}
+
+		public boolean changeUsernameAdmin() {
+			log.info("Checking visibility of Username Admin");
+			boolean result = changeUsernameAdmin.isDisplayed();
+			log.info("Username Admin visibility: " + result);
+			return result;
+		}
+
+		public boolean changeCurrentPassword() {
+			log.info("Checking visibility of Current Password label");
+			boolean result = changeCurrentPassword.isDisplayed();
+			log.info("Current Password label visibility: " + result);
+			return result;
+		}
+
+		public boolean changeCurrentPassswordValue(String password) {
+			log.info("Entering current password: " + password);
+			changeCurrentPassswordValue.sendKeys(password);
+			boolean result = changeCurrentPassswordValue.isEnabled();
+			log.info("Current Password value is enabled: " + result);
+			return result;
+		}
+
+		public boolean changePassword() {
+			log.info("Checking visibility of Password label");
+			boolean result = changePassword.isDisplayed();
+			log.info("Password label visibility: " + result);
+			return result;
+		}
+
+		public boolean changePasswordValue(String password) {
+			log.info("Entering current password: " + password);
+			changePasswordValue.sendKeys(password);
+			boolean result = changePasswordValue.isEnabled();
+			log.info("Password input field is enabled: " + result);
+			return result;
+		}
+
+		public boolean changeConfirmPassword() {
+			log.info("Checking visibility of Confirm Password label");
+			boolean result = changeConfirmPassword.isDisplayed();
+			log.info("Confirm Password label visibility: " + result);
+			return result;
+		}
+
+		public boolean changeConfirmPasswordValue(String password) {
+			log.info("Entering confirm password: " + password);
+			changeConfirmPasswordValue.sendKeys(password);
+			boolean result = changeConfirmPasswordValue.isEnabled();
+			log.info("Confirm Password input field is enabled: " + result);
+			return result;
+		}
+
+		public boolean changeUserPasswordHint() {
+			log.info("Checking visibility of Password hint");
+			boolean result = changeUserPasswordHint.isDisplayed();
+			log.info("Password hint visibility: " + result);
+			return result;
+		}
+
+		public boolean changeRequiredText() {
+			log.info("Checking visibility of required text");
+			boolean result = changeRequiredText.isDisplayed();
+			log.info("Required text visibility: " + result);
+			return result;
+		}
+
+		public DashboardPage changeCancelButton() {
+			changeCancelButton.click();
+			log.info("checking the cancel button is enabled");
+			log.info("Checking visibility of Cancel button");
+			boolean result = changeCancelButton.isEnabled();
+			log.info("Cancel button is enabled: " + result);
+			return new DashboardPage();
+		}
+
+		public boolean changeResetButton() {
+			changeResetButton.click();
+			log.info("checking the reset button is enabled");
+			log.info("Checking visibility of reset button");
+			boolean result = changeResetButton.isEnabled();
+			log.info("reset button is enabled: " + result);
+			return result;
+		}
+
+		public boolean changeCurrentPasswordRequired() {
+			changeResetButton();
+			log.info("Checking visibility of Current Password Required error message");
+			boolean result = changeCurrentPasswordRequired.isDisplayed();
+			log.info("Current Password Required error message visibility: " + result);
+			return result;
+		}
+
+		public boolean changePasswordRequired() {
+			changeResetButton();
+			log.info("Checking visibility of Password Required error message");
+			boolean result = changePasswordRequired.isDisplayed();
+			log.info("Password Required error message visibility: " + result);
+			return result;
+		}
+
+		public boolean changeConfirmPasswordRequired() {
+			changeResetButton();
+			log.info("Checking visibility of Confirm Password Required error message");
+			boolean result = changeConfirmPasswordRequired.isDisplayed();
+			log.info("Confirm Password Required error message visibility: " + result);
+			return result;
+		}
+}

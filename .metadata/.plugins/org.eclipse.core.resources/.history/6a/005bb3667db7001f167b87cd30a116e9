@@ -1,0 +1,116 @@
+package com.orangehrm.qa.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class ForgotPasswordPage {
+	// ------------------------Page object initializing-------------------
+	public ForgotPasswordPage() {
+		PageFactory.initElements(driver, this);
+		log.info("ForgotPasswordPage initialized");
+	}
+
+	// ------------------------PageObject-------------------
+	@FindBy(tagName = "h6")
+	WebElement headerResetPassword;
+	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p']")
+	WebElement descriptionText;
+	@FindBy(tagName = "i")
+	WebElement iconPerson;
+	@FindBy(tagName = "label")
+	WebElement labelUsername;
+	@FindBy(name = "username")
+	WebElement inputUsername;
+	@FindBy(xpath = "//button[normalize-space()='Cancel']")
+	WebElement clickCancelButton;
+	@FindBy(xpath = "//button[normalize-space()='Reset Password']")
+	WebElement clickResetButton;
+	@FindBy(tagName = "span")
+	WebElement requiredSpan;
+	@FindBy(xpath = "//p[normalize-space()='OrangeHRM OS 5.7']")
+	WebElement labelVersion;
+	@FindBy(linkText = "OrangeHRM, Inc")
+	WebElement clickMainPage;
+	@FindBy(xpath = "//img[@src='/public/_resources/themes/orangehrm/dist/images/OrangeHRM_Logo.svg']")
+	WebElement logoMainPage;
+	@FindBy(tagName = "h6")
+	WebElement resetPasswordLink;
+
+	// ------------------------------Actions------------------------------
+	public boolean headerResetPassword() {
+		log.info("Checking visibility of the header reset password");
+		boolean result = headerResetPassword.isDisplayed();
+		log.info("Header reset password visibility: " + result);
+		return result;
+	}
+
+	public boolean descriptionText() {
+		log.info("Checking visibility of the description text");
+		boolean result = descriptionText.isDisplayed();
+		log.info("Description text visibility: " + result);
+		return result;
+	}
+
+	public boolean iconPerson() {
+		log.info("Checking visibility of the person icon");
+		boolean result = iconPerson.isDisplayed();
+		log.info("Person icon visibility: " + result);
+		return result;
+	}
+
+	public boolean labelUsername() {
+		log.info("Checking visibility of the username label");
+		boolean result = labelUsername.isDisplayed();
+		log.info("Username label visibility: " + result);
+		return result;
+	}
+
+	public boolean labelVersion() {
+		log.info("Checking visibility of the version label");
+		boolean result = labelVersion.isDisplayed();
+		log.info("Version label visibility: " + result);
+		return result;
+	}
+
+	public void clickCancelButton() {
+		log.info("Clicking on the Cancel button");
+		clickCancelButton.click();
+	}
+
+	public void clickResetButton() {
+		log.info("Clicking on the Reset Password button");
+		clickResetButton.click();
+	}
+
+	public boolean requiredMessage() {
+		log.info("Checking visibility of the required message");
+		boolean result = requiredSpan.isDisplayed();
+		log.info("Required message visibility: " + result);
+		return result;
+	}
+
+	public void enterUsername(String username) {
+		log.info("Entering username: " + username);
+		inputUsername.sendKeys(username);
+	}
+
+	public void clickMainPageLink() {
+		log.info("Clicking on the main page link");
+		clickMainPage.click();
+	}
+
+	public boolean logoMainPage() {
+		log.info("Checking visibility of the main page logo");
+		boolean result = logoMainPage.isDisplayed();
+		log.info("Main page logo visibility: " + result);
+		return result;
+	}
+
+	public boolean resetPasswordLink() {
+		log.info("Checking visibility of the reset password link");
+		boolean result = resetPasswordLink.isDisplayed();
+		log.info("Reset password link visibility: " + result);
+		return result;
+	}
+}

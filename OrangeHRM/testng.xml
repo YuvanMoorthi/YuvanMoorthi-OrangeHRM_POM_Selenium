@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM">
+<listeners>
+<listener class-name="com.orangehrm.qa.extentreportlistener.ExtentReportListener"/>
+</listeners>
+<test name="Smoke">
+<!--  Test classes to run  -->
+<classes>
+<class name="com.orangehrm.qa.testcases.LoginPageTest"/>
+<class name="com.orangehrm.qa.testcases.DashboardPageTest"/>
+<class name="com.orangehrm.qa.testcases.ForgotPasswordPageTest"/>
+<class name="com.orangehrm.qa.testcases.SupportPageTest"/>
+<class name="com.orangehrm.qa.testcases.AboutPageTest"/>
+<class name="com.orangehrm.qa.testcases.ChangePasswordPageTest"/>
+<class name="com.orangehrm.qa.testcases.AttendancePageTest"/>
+</classes>
+</test>
+</suite>
